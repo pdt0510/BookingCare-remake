@@ -1,0 +1,22 @@
+.DoctorCarousel-content {
+ .carousel-content {
+  background-color: #f5f5f5;
+
+  .slick-slider {
+   .slick-slide > div {
+    text-align: center;
+    border: 1px solid #80808026;
+
+    .carousel-img {
+     width: 66%;
+     border-radius: 50% !important;
+     margin: 8px auto 0;
+    }
+   }
+
+   .slick-arrow {
+    top: 50%;
+   }
+  }
+ }
+}

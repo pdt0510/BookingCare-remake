@@ -1,0 +1,50 @@
+.specialityManager-content {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ gap: 24px;
+
+ .specialityManager-title {
+  font-size: 28px;
+  text-align: center;
+ }
+
+ .specialityManager-image {
+  .imageFile-content {
+   display: flex;
+   justify-content: left;
+   flex-direction: row-reverse;
+   align-items: flex-end;
+
+   .imageFile-label-upload {
+    height: fit-content;
+    width: fit-content;
+    line-height: 30px;
+   }
+
+   .preview-image {
+    height: 100px;
+    width: 140px;
+    margin-bottom: 2px;
+    margin-left: 0;
+   }
+  }
+ }
+
+ .specialityManager-selectInputCustom {
+  display: flex;
+  gap: 24px;
+ }
+
+ .specialityManager-markdown {
+  .rc-md-editor {
+   height: 500px;
+  }
+ }
+
+ .btn-grouped {
+  display: flex;
+  gap: 12px;
+  margin: -12px 0 12px;
+ }
+}

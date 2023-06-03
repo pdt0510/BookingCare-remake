@@ -1,0 +1,63 @@
+.doctorExtraInfo-content {
+ border-left: 1px solid #80808047;
+ margin-top: 54px;
+ padding: 0px 16px;
+
+ .doctorExtraInfo-part {
+  padding: 8px 0;
+
+  .doctorExtraInfo-title {
+   color: gray;
+   text-transform: uppercase;
+  }
+ }
+
+ .doctorExtraInfo-up {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #80808047;
+
+  span {
+   line-height: 24px;
+  }
+
+  .up-address {
+   font-weight: bold;
+  }
+ }
+
+ .doctorExtraInfo-down {
+  .down-seeMore {
+   cursor: pointer;
+   color: rgba(0, 0, 255, 0.568);
+  }
+
+  .seeMore-table {
+   border: 1px solid #80808047;
+   box-shadow: 0px 0px 2px grey;
+   margin-top: 8px;
+
+   .seeMore-table-up {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    background: #f8f8f8;
+
+    .seeMore-table-title {
+     display: flex;
+     justify-content: space-between;
+    }
+
+    .seeMore-table-text {
+     font-size: 13px;
+    }
+   }
+
+   .seeMore-table-down {
+    padding: 4px;
+    background: #eee;
+    font-size: 13px;
+   }
+  }
+ }
+}

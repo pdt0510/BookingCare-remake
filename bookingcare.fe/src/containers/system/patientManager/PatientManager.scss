@@ -1,0 +1,26 @@
+.patientManager-content {
+ text-align: center;
+
+ .patientManager-title {
+  font-size: 20px;
+ }
+
+ .patientManager-dateSelected {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  margin: 24px 0 24px -15px;
+ }
+
+ .table {
+  .table-body {
+   td {
+    vertical-align: bottom;
+
+    &.customCol {
+     text-align: left;
+    }
+   }
+  }
+ }
+}

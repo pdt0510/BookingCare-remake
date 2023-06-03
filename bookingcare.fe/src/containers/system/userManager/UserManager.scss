@@ -1,0 +1,54 @@
+@import '../../../styles/_variables';
+
+.userManager-content {
+ width: 96%;
+ margin: 0 auto;
+
+ .userManager-header {
+  display: block;
+  text-align: center;
+  font-size: $fontSize32 - 4;
+ }
+
+ .feature-group {
+  display: flex;
+  align-items: center;
+
+  .btn-add {
+   padding: $padding24/3 $padding24/3;
+   margin: $padding24/3 0;
+   min-width: $width100;
+  }
+
+  .custom-select {
+   width: fit-content;
+   margin-left: $margin24/3;
+  }
+
+  .search-input {
+   width: $width100 * 3;
+   margin: 0 0 0 auto;
+  }
+ }
+
+ .userManager-table {
+  .table-tbody {
+   td {
+    vertical-align: bottom;
+   }
+
+   .table-noData {
+    text-align: center;
+   }
+
+   .btn-edit {
+    margin-right: $margin24 - 8;
+   }
+  }
+ }
+}
+
+.confirm-message {
+ font-weight: 600;
+ font-size: $fontSize32 + 8;
+}

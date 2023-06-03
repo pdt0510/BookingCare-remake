@@ -1,0 +1,20 @@
+@import '../../styles/_variables';
+
+.doctorExtra-content {
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+
+ .select-sort-icon {
+  i {
+   cursor: pointer;
+   padding: $padding24/3 $padding24 - 14;
+   border-radius: $borderRadius16/4;
+   background-color: #9acd3252;
+  }
+ }
+
+ .select-input-custom {
+  width: 100%;
+ }
+}

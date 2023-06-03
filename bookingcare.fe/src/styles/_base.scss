@@ -1,0 +1,102 @@
+@import '_variables.scss';
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body,
+html {
+ font-family: $fontmain;
+ font-size: $fontSize16 - 2;
+ height: $height100vh;
+ overflow: hidden;
+
+ .posLayer {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ }
+
+ .imgBgr {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .searchBar {
+  input {
+   width: 340px;
+   padding: 8px 16px;
+   border-radius: 21px;
+   outline: none;
+   border: none;
+   margin-top: 24px;
+   background-color: #ffebcdc2;
+  }
+
+  ::-webkit-search-cancel-button {
+   cursor: pointer;
+  }
+ }
+
+ .select-input-custom {
+  width: fit-content;
+  height: $height40 - 6;
+  border-radius: $borderRadius16/4;
+  padding: 0 $padding24/6;
+  border: 1px solid #8080804d;
+
+  &.forSelect {
+   cursor: pointer;
+  }
+ }
+
+ .BTN {
+  display: inline-block;
+  min-width: 60px;
+  padding: $padding24/6 $padding24/3;
+  border-radius: $borderRadius16/4;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+
+  &:hover {
+   opacity: 0.8;
+  }
+
+  &.BTN-default {
+   background-color: $defaultColor;
+  }
+
+  &.BTN-primary {
+   background-color: $primaryColor;
+  }
+
+  &.BTN-success {
+   background-color: $successColor;
+  }
+
+  &.BTN-danger {
+   background-color: $dangerColor;
+  }
+
+  &.btn-timeMark {
+   color: black;
+   background-color: transparent;
+
+   &:hover {
+    background-color: #007bff63;
+   }
+
+   &.actived {
+    color: white;
+    background-color: $primaryColor;
+   }
+  }
+ }
+}

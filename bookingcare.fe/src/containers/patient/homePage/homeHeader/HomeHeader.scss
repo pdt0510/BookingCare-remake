@@ -1,0 +1,68 @@
+@import '../../../../styles/_variables';
+
+.homeHeader-content {
+ background-color: $whiteColor;
+
+ &.posLayer {
+  position: fixed;
+  bottom: unset;
+  z-index: 99;
+ }
+
+ .homeHeader-container {
+  display: flex;
+  align-items: center;
+  height: $headerHeight77;
+
+  .homeHeader-left {
+   display: flex;
+
+   .homeHeader-icon {
+    font-size: $fontSize16 + 10;
+    width: $width100 - 68;
+   }
+
+   .homeHeader-img {
+    padding: 18px 0;
+    width: $width100 + 60;
+    height: $headerHeight77 - 37;
+    background-image: url('../../../../assets/images/homeHeader/bookingcare-2020.svg');
+
+    &:hover {
+     cursor: pointer;
+    }
+   }
+  }
+
+  .homeHeader-mid {
+   display: flex;
+   margin-left: $margin100 - 10;
+
+   .homeHeader-mid-block {
+    list-style: none;
+    margin: 0 $margin100 - 76 0 0;
+    font-size: $fontSize16 - 5;
+
+    .homeHeader-mid-title {
+     font-size: $fontSize16 - 2;
+     font-weight: $fontWeight500 + 100;
+    }
+   }
+  }
+
+  .homeHeader-right {
+   margin: 0 0 0 auto;
+   font-weight: $fontWeight500 + 100;
+
+   .languages-content {
+    margin: 0;
+    border-radius: $borderRadius16 - 10;
+    background-color: #05558a14;
+
+    &:hover {
+     background-color: #0495f540;
+    }
+   }
+  }
+ }
+}

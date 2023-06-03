@@ -1,0 +1,93 @@
+.detailSpeciality-content {
+ .homeHeader-content {
+  background-color: #02faff;
+ }
+
+ .detailSpeciality-detail {
+  .detail-info {
+   margin-top: 77px;
+   margin-bottom: 8px;
+   height: 130px;
+   padding: 16px 0;
+   font-size: 13px;
+   overflow: hidden;
+
+   &.seeMore {
+    overflow: visible;
+    height: fit-content;
+    margin-bottom: -24px;
+   }
+  }
+
+  .detail-seeMore-btn {
+   display: inline-block;
+   font-size: 14px;
+   color: blue;
+   padding: 8px 8px;
+   cursor: pointer;
+  }
+
+  h2,
+  h3 {
+   font-size: 18px;
+  }
+
+  ul {
+   margin-left: 24px;
+  }
+ }
+
+ .detailSpeciality-bgrColor {
+  background-color: #eee;
+
+  .detailSpeciality-doctors {
+   padding: 16px 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+
+   .doctorInfo-content {
+    margin-top: unset;
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+
+    .doctorIntro-content {
+     align-items: unset;
+     padding: 12px;
+     flex: 55%;
+
+     .doctorIntro-name {
+      font-size: 16px;
+      color: #45c3d2;
+      margin-bottom: 4px;
+      cursor: pointer;
+     }
+    }
+
+    .doctorInfo-detailes {
+     display: unset;
+     flex: 45%;
+
+     .doctorInfo-left {
+      border-left: 1px solid #80808047;
+      padding: 0 16px;
+
+      .doctorWorkdate-content {
+       border-bottom: 1px solid #80808047;
+      }
+     }
+
+     .doctorInfo-right {
+      border-left: 1px solid #80808047;
+
+      .doctorExtraInfo-content {
+       border-left: unset;
+       margin-top: unset;
+      }
+     }
+    }
+   }
+  }
+ }
+}

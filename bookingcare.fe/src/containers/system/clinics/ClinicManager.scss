@@ -1,0 +1,56 @@
+.clinicManager-content {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+
+ .clinicManager-title {
+  font-size: 28px;
+  text-align: center;
+ }
+
+ .imageFile-content {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+
+  .imageFile-label-upload {
+   height: fit-content;
+   width: fit-content;
+   line-height: 30px;
+  }
+
+  .preview-image {
+   height: 100px;
+   width: 140px;
+   margin-bottom: 2px;
+   margin-left: 0;
+  }
+ }
+
+ .clinicManager-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  .clinicManager-info {
+   text-align: left;
+   width: 49%;
+  }
+ }
+
+ .clinicManager-editor {
+  .rc-md-editor {
+   height: 500px;
+  }
+ }
+
+ .doctorManager-btns {
+  text-align: left;
+  margin: -12px 0 12px;
+
+  .BTN {
+   margin-right: 8px;
+  }
+ }
+}

@@ -1,0 +1,107 @@
+@import '../../../styles/_variables';
+
+.login-content {
+ .login-bgr {
+  height: $height100vh;
+  background: linear-gradient(to bottom right, #3fc0af 0%, #dfbb41 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-form {
+   width: $width320;
+   background-color: white;
+   border-radius: $borderRadius16;
+   overflow: hidden;
+
+   .languages-content {
+    width: $height40;
+    line-height: $lineHeight40 - 4;
+    margin: 0 0 0 auto;
+    font-weight: $fontWeight500 + 100;
+
+    &:hover {
+     background-color: #ddd5d54d;
+    }
+   }
+
+   .login-header {
+    font-size: $fontSize16 + 20;
+    margin-bottom: $distance48;
+    font-weight: $fontWeight500;
+    text-align: center;
+   }
+
+   .login-body {
+    width: 80%;
+    margin: 0 auto;
+
+    .form-group {
+     margin-bottom: $distance24;
+
+     label {
+      margin-left: $distance24/2;
+     }
+
+     .group-flex {
+      display: flex;
+      justify-content: space-between;
+     }
+    }
+
+    .forgotten-password {
+     width: fit-content;
+     padding: $distance24/6 $distance24/3;
+     margin: 8-$distance24 0 $distance24 auto;
+     font-size: $fontSize16 - 4;
+     color: $customBlueColor;
+     cursor: pointer;
+
+     &:hover {
+      opacity: $opacity07;
+     }
+    }
+
+    .btn-login {
+     display: block;
+     border-radius: $borderRadius16;
+     font-weight: $fontWeight500 + 100;
+    }
+
+    .login-mess {
+     color: $dangerColor;
+     font-size: $fontSize16 - 5;
+    }
+   }
+
+   .login-footer {
+    margin: $distance24 * 2 0 $distance24;
+    text-align: center;
+
+    .login-icons {
+     display: flex;
+     justify-content: center;
+     gap: $distance24;
+     margin: $distance24 0;
+     font-size: $fontSize16 + 20;
+
+     i {
+      &.facebook-color {
+       color: $fbColor;
+       font-size: $fontSize16 + 22;
+      }
+
+      &.google-color {
+       color: $ggColor;
+      }
+
+      &:hover {
+       opacity: $opacity07;
+       cursor: pointer;
+      }
+     }
+    }
+   }
+  }
+ }
+}

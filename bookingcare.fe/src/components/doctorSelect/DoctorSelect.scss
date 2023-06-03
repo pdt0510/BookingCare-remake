@@ -1,0 +1,16 @@
+@import '../../styles/_variables';
+
+.doctorSelect-content {
+ display: flex;
+ align-items: center;
+ gap: $margin24/3;
+
+ .select-sort-icon {
+  i {
+   cursor: pointer;
+   padding: $padding24/3 $padding24 - 14;
+   border-radius: $borderRadius16/4;
+   background-color: #9acd3252;
+  }
+ }
+}

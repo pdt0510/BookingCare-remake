@@ -1,0 +1,21 @@
+@import '../../../../styles/_variables';
+
+.bookingClass {
+ &.modal-customized {
+  .modal-content {
+   .doctorIntro-content {
+    padding: 12px 12px 0;
+
+    &.container {
+     margin: 0;
+    }
+   }
+
+   .modal-body {
+    .customize-datePicker input {
+     height: 33.5px;
+    }
+   }
+  }
+ }
+}

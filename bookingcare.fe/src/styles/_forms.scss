@@ -1,0 +1,60 @@
+@import '../styles/_variables';
+
+.form-group,
+label {
+ margin: 0;
+}
+
+input,
+select,
+textarea {
+ box-shadow: none !important;
+ outline: unset;
+}
+
+a {
+ text-decoration: none;
+ background-color: transparent;
+
+ &:hover {
+  text-decoration: none;
+ }
+}
+
+.modal-customized {
+ display: flex;
+ align-items: center;
+ height: inherit;
+ min-width: 744px;
+
+ .modal-content {
+  .modal-header {
+   align-items: unset;
+   overflow: hidden;
+   background-color: $primaryColorLight;
+   color: white;
+
+   .modal-title {
+    text-transform: uppercase;
+   }
+
+   .close {
+    span {
+     font-size: $fontSize32 - 2;
+    }
+
+    &:hover {
+     background-color: #f2f2f2;
+    }
+   }
+  }
+
+  .modal-body {
+   form {
+    .form-group {
+     margin: $margin24/3 0;
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,32 @@
+@import '../../../styles/_variables';
+
+.userManagerClass {
+ &.modal-customized {
+  .modal-body {
+   .password-eyes {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .label-as-fileInput {
+    display: block;
+    cursor: pointer;
+    padding: $margin24/4 - 1 $margin24/3;
+    border-radius: 4px;
+    border: 1px solid #80808054;
+
+    &:hover {
+     background-color: #8080800c;
+    }
+   }
+
+   .preview-image {
+    height: $height100 + 20;
+    width: $height100 + 20;
+    border-radius: 4px;
+    margin: $margin24/3 auto -14px auto;
+    box-shadow: 1px 1px 2px gray;
+   }
+  }
+ }
+}

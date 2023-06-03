@@ -1,0 +1,48 @@
+@import '../../../styles/_variables';
+
+.doctorManager-content {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ gap: $margin24;
+
+ .doctorManager-title {
+  font-size: $fontSize32 - 4;
+  text-align: center;
+ }
+
+ .doctorManager-extra {
+  .extra-select,
+  .extra-input {
+   display: flex;
+   justify-content: space-between;
+   gap: $margin24;
+   margin: 12px 0;
+  }
+ }
+
+ .doctorManager-desc {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .doctorManager-markdown {
+  .rc-md-editor {
+   height: 500px;
+
+   .custom-html-style {
+    text-align: left;
+
+    p {
+     margin: 0;
+    }
+   }
+  }
+ }
+
+ .btn-grouped {
+  display: flex;
+  gap: $margin24/2;
+  margin: -$margin24/2 0 $margin24/2;
+ }
+}

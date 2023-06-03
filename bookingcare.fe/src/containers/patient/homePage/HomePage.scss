@@ -1,0 +1,62 @@
+@import '../../../styles/_variables';
+
+.homePage-content {
+ .section-content {
+  padding: 48px 0;
+
+  .section-title {
+   margin: 0 0 4px 8px;
+   font-weight: 600;
+   font-size: 20px;
+  }
+
+  .section-info {
+   display: flex;
+   align-items: center;
+   text-align: center;
+  }
+ }
+
+ .slick-slider {
+  .slick-arrow {
+   top: 42%;
+   width: 48px;
+   height: 46px;
+   opacity: 0.5;
+   z-index: 1;
+  }
+
+  .slick-prev {
+   left: -38px;
+  }
+
+  .slick-next {
+   right: -40px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+   font-size: 32px;
+   color: #0000ff;
+   font-weight: bold;
+   font-family: unset;
+  }
+
+  .slick-prev:before {
+   content: '⮘';
+  }
+
+  .slick-next:before {
+   content: '⮚';
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+   background-color: #c6cac9;
+  }
+
+  .slick-disabled {
+   display: none !important;
+  }
+ }
+}

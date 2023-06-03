@@ -1,0 +1,62 @@
+@import '../../../styles/_variables';
+
+.header-content {
+ z-index: 99;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: $mainColor;
+ color: $whiteColor;
+ height: $height40;
+
+ .header-right {
+  display: flex;
+  align-items: center;
+  margin: 0 2%;
+  gap: 12px;
+
+  .info-logout-icon {
+   font-size: 20px;
+   padding: 0 8px;
+   cursor: pointer;
+
+   &:hover {
+    .info-logout-btn {
+     display: block;
+    }
+   }
+
+   .info-logout-btn {
+    position: absolute;
+    top: 35px;
+    left: -45px;
+
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    color: black;
+    text-align: center;
+    background-color: #e4e3e37d;
+    display: none;
+
+    &:hover {
+     background-color: #e4e3e3;
+    }
+
+    &::after {
+     content: '';
+     display: block;
+
+     height: 12px;
+     background-color: #0000;
+
+     position: relative;
+     top: -42px;
+    }
+   }
+  }
+ }
+}

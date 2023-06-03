@@ -1,0 +1,33 @@
+body {
+ ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+ }
+
+ ::-webkit-scrollbar-track {
+  border-radius: 5px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+  background: #0003;
+  border-radius: 5px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+  background: #0006;
+ }
+
+ &.modal-open {
+  .app {
+   overflow: unset;
+  }
+
+  ::-webkit-scrollbar-thumb {
+   background: #ffffff80;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+   background: #fff;
+  }
+ }
+}

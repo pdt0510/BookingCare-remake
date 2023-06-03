@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.loadingGif-content {
+ background-color: #00000017;
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: 9999;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ .loadingGif-img {
+  background: url('../../assets/images/loadingGif/ajax-loader.gif');
+  width: $width100;
+  height: $width100;
+  background-size: cover;
+ }
+}

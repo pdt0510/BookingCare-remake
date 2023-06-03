@@ -1,0 +1,28 @@
+@import '../../../../styles/_variables';
+
+.menuGroup-content {
+ display: flex;
+ list-style: none;
+ line-height: $height40;
+ text-align: center;
+
+ .menuGroup {
+  cursor: pointer;
+  height: $height40;
+  width: $minWidth30 + 60;
+  border-right: 1px solid $borderColor;
+  position: relative;
+
+  &.actived {
+   background-color: $menuHoverColor;
+  }
+
+  &:hover {
+   background-color: $menuHoverColor;
+
+   .subMenu {
+    display: flex;
+   }
+  }
+ }
+}

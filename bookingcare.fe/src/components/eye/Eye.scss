@@ -1,0 +1,6 @@
+@import '../../styles/_variables';
+.eye-content {
+ cursor: pointer;
+ color: $activeColor;
+ padding: 0 $distance24/3;
+}

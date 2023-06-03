@@ -1,0 +1,29 @@
+@import '../../../../styles/_variables';
+
+.carousel-content {
+ .slick-slider {
+  .slick-slide > div {
+   margin: 0px 8px;
+   text-align: left;
+
+   &:hover {
+    cursor: pointer;
+    color: #45c3d2;
+   }
+
+   .carousel-link {
+    color: unset;
+
+    .carousel-img {
+     padding-top: 67%;
+     border-radius: 8px;
+     box-shadow: -1px 1px 4px grey;
+    }
+
+    .carousel-text {
+     padding: 8px 0px;
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,86 @@
+.HomeFooter-content {
+ background-color: white;
+
+ .section-info {
+  text-align: left !important ;
+
+  .HomeFooter-left {
+   flex: 2;
+
+   .HomeFooter-left-icon {
+    background: url('../../../../assets/images/homeHeader/bookingcare-2020.svg') center center
+     no-repeat;
+    height: 44px;
+    width: 200px;
+   }
+
+   .HomeFooter-left-text {
+    .left-text-company {
+     font-weight: 500;
+     margin: 5px 0;
+    }
+
+    .left-text-address {
+     margin: 4px 0;
+
+     .text-address-icon {
+      margin-right: 4px;
+     }
+    }
+
+    .left-created-icon {
+     margin-right: 4px;
+    }
+   }
+
+   .HomeFooter-left-label {
+    display: inline-block;
+    background: url('../../../../assets/images/bo-cong-thuong.svg') center / contain no-repeat;
+    margin-top: 10px;
+    height: 40px;
+    width: 78px;
+   }
+  }
+
+  .HomeFooter-mid {
+   flex: 1;
+
+   .HomeFooter-mid-link {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+
+    &:hover {
+     color: black;
+    }
+   }
+  }
+
+  .HomeFooter-right {
+   flex: 1;
+
+   .HomeFooter-right-text {
+    margin-bottom: 16px;
+
+    .right-text-title {
+     font-weight: 500;
+     font-size: 16px;
+    }
+   }
+  }
+ }
+
+ .HomeFooter-app {
+  font-size: 18px;
+
+  .HomeFooter-app-icon {
+   margin-right: 8px;
+  }
+
+  .HomeFooter-app-link {
+   &:hover {
+    color: black;
+   }
+  }
+ }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/_variables';
+
+.doctorSchedule-content {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ gap: 36px;
+
+ .doctorSchedule-title {
+  font-size: 28px;
+ }
+
+ .doctorSchedule-selectGroup {
+  display: flex;
+ }
+
+ .doctorSchedule-timeMarksGroup {
+  display: flex;
+
+  .timeMark.col-6 {
+   display: flex;
+   justify-content: space-between;
+  }
+ }
+
+ .btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+ }
+}

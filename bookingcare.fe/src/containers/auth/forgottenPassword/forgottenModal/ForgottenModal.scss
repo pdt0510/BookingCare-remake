@@ -1,0 +1,13 @@
+.billModal-content {
+ .modal-content {
+  width: 60%;
+  margin: auto;
+
+  .modal-imgFile {
+   display: flex;
+   align-items: baseline;
+   gap: 12px;
+   margin-top: 8px;
+  }
+ }
+}

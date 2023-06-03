@@ -1,0 +1,27 @@
+@import '../../../../styles/_variables';
+
+.doctorWorkdate-content {
+ .select-input-custom {
+  width: fit-content;
+  height: 28px;
+  border-radius: unset;
+  border-color: transparent;
+  border-bottom-color: #00000030;
+ }
+
+ .doctorWorkdate-timemark {
+  margin: 8px 0;
+
+  .timemark-text {
+   font-weight: 600;
+   padding: 4px 2px;
+  }
+
+  .btn-timeMark {
+   background-color: #ffff0029;
+   margin: 0 8px 8px 0;
+   min-width: 106px;
+   padding: 8px 0;
+  }
+ }
+}
