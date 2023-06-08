@@ -2,7 +2,7 @@ import moment from 'moment';
 import viLang from '../translations/vi.json';
 import enLang from '../translations/en.json';
 import { dateFormat, LANGUAGES, nameKeysValues } from './constant';
-import * as constVals from '.';
+import * as constVals from './index';
 import { Buffer } from 'buffer';
 import jwt_decode from 'jwt-decode';
 

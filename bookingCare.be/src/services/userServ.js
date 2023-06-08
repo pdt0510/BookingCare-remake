@@ -126,6 +126,7 @@ export const localPassportLoginServ = async (req, res, next) => {
 									done(null, false);
 								} else {
 									const isMatched = await checkPassword(password, data[0].password);
+
 									if (!isMatched) done(null, false);
 									else {
 										let userInfo = null;
@@ -279,7 +280,10 @@ export const getAllDoctorsServ = () => {
 			const { doctorRole } = constVals.defaultKeys;
 
 			const records = await db.users.findAll({
-				where: { roleId: doctorRole },
+				where: {
+					deleted: constVals.defaultValues.noDelete, //src33xx3
+					roleId: doctorRole,
+				},
 				attributes: ['id', 'firstname', 'lastname', 'avatar'],
 			});
 
@@ -408,21 +412,27 @@ export const deleteUserByIdServ = (id) => {
 	return new Promise(async (resolve, reject) => {
 		try {
 			let result = apiStates.notFound;
-
 			const user = await db.users.findOne({
 				where: { id },
 				attributes: ['id'],
 			});
 
+			// src33xx2,
 			if (user) {
-				const isdeleted = await db.users.destroy({
-					where: { id },
+				const doctorId = user.id;
+				const onDelete = constVals.defaultValues.deleted;
+
+				// src33xx3
+				const doctorInfo = await db.doctor_infors.findOne({
+					where: { doctorId },
 				});
 
-				const success = 1;
-				if (isdeleted === success) {
-					result = apiStates.noErrors;
+				if (doctorInfo) {
+					await db.doctor_infors.update({ deleted: onDelete }, { where: { doctorId } });
 				}
+
+				const [isdeleted] = await db.users.update({ deleted: onDelete }, { where: { id } });
+				if (isdeleted) result = apiStates.noErrors;
 			}
 
 			resolve(result);
@@ -559,7 +569,9 @@ export const getAllUsersServ = () => {
 	return new Promise(async (resolve, reject) => {
 		try {
 			let result = apiStates.notCreated;
+
 			const users = await db.users.findAll({
+				where: { deleted: constVals.defaultValues.noDelete }, // src33xx3
 				attributes: { exclude: ['password', 'avatar', 'createdAt', 'updatedAt'] },
 			});
 

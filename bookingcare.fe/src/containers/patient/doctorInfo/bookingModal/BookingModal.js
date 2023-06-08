@@ -24,10 +24,10 @@ class BookingModal extends Component {
 			// address: '',
 
 			email: 'phanductai920510@gmail.com',
-			firstname: 'Long',
-			lastname: 'Nguyễn Hoàng',
+			firstname: 'Tai',
+			lastname: 'PD',
 			phone: '09123123123',
-			address: 'Hà Nội capital',
+			address: 'tp.HCM',
 			birthday: new Date(),
 			gender: constVals.defaultKeys.maleGender,
 		},

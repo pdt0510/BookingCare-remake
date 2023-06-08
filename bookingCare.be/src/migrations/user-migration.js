@@ -1,6 +1,7 @@
 'use strict';
 
 const types = {
+	INTEGER: 'INTEGER',
 	STRING: 'STRING',
 	TEXT: 'TEXT',
 	BLOBlong: `BLOBlong`,
@@ -18,6 +19,7 @@ const names = {
 	roleId: 'roleId',
 	positionId: 'positionId',
 	resetPasswordToken: 'resetPasswordToken',
+	deleted: 'deleted',
 };
 
 const tableInfo = {
@@ -34,6 +36,7 @@ const tableInfo = {
 		`${names.roleId}-${types.STRING}`,
 		`${names.positionId}-${types.STRING}`,
 		`${names.resetPasswordToken}-${types.TEXT}`,
+		`${names.deleted}-${types.INTEGER}`,
 	],
 };
 

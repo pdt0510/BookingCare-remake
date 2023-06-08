@@ -2,9 +2,12 @@ import axios from 'axios';
 import { paths } from './supplies/routeSupplies';
 import Commons from './utilities/Commons';
 
-const accessToken = JSON.parse(localStorage.getItem('persist:user')).accessToken;
+let accessToken = JSON.parse(localStorage.getItem('persist:user'))?.accessToken;
+
 let accessTokenVal =
-	accessToken === 'null' || accessToken === null ? null : accessToken.slice(1, -1);
+	accessToken === 'null' || accessToken === null || accessToken === undefined
+		? null
+		: accessToken.slice(1, -1);
 
 const defaultConfigs = {
 	baseURL: process.env.REACT_APP_BACKEND_URL || 8080,
@@ -19,8 +22,8 @@ instance.interceptors.request.use(
 		if (accessTokenVal && isExpired) {
 			window.location.href = paths.login;
 			const resetUserInfo = {
-				isLoggedIn: false,
 				userInfo: null,
+				isLoggedIn: false,
 				accessToken: null,
 			};
 			localStorage.setItem('persist:user', JSON.stringify(resetUserInfo));

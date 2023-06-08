@@ -1,93 +1,100 @@
 .detailSpeciality-content {
- .homeHeader-content {
-  background-color: #02faff;
- }
+	.homeHeader-content {
+		background-color: #02faff;
+	}
 
- .detailSpeciality-detail {
-  .detail-info {
-   margin-top: 77px;
-   margin-bottom: 8px;
-   height: 130px;
-   padding: 16px 0;
-   font-size: 13px;
-   overflow: hidden;
+	.detailSpeciality-detail {
+		.detail-info {
+			margin-top: 77px;
+			margin-bottom: 8px;
+			height: 130px;
+			padding: 16px 0;
+			font-size: 13px;
+			overflow: hidden;
 
-   &.seeMore {
-    overflow: visible;
-    height: fit-content;
-    margin-bottom: -24px;
-   }
-  }
+			&.seeMore {
+				overflow: visible;
+				height: fit-content;
+				margin-bottom: -24px;
+			}
+		}
 
-  .detail-seeMore-btn {
-   display: inline-block;
-   font-size: 14px;
-   color: blue;
-   padding: 8px 8px;
-   cursor: pointer;
-  }
+		.detail-info2 {
+			margin-top: 77px;
+			margin-bottom: 8px;
+			padding: 16px 0;
+			text-align: center;
+		}
 
-  h2,
-  h3 {
-   font-size: 18px;
-  }
+		.detail-seeMore-btn {
+			display: inline-block;
+			font-size: 14px;
+			color: blue;
+			padding: 8px 8px;
+			cursor: pointer;
+		}
 
-  ul {
-   margin-left: 24px;
-  }
- }
+		h2,
+		h3 {
+			font-size: 18px;
+		}
 
- .detailSpeciality-bgrColor {
-  background-color: #eee;
+		ul {
+			margin-left: 24px;
+		}
+	}
 
-  .detailSpeciality-doctors {
-   padding: 16px 15px;
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
+	.detailSpeciality-bgrColor {
+		background-color: #eee;
 
-   .doctorInfo-content {
-    margin-top: unset;
-    display: flex;
-    background-color: #fff;
-    border-radius: 8px;
+		.detailSpeciality-doctors {
+			padding: 16px 15px;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
 
-    .doctorIntro-content {
-     align-items: unset;
-     padding: 12px;
-     flex: 55%;
+			.doctorInfo-content {
+				margin-top: unset;
+				display: flex;
+				background-color: #fff;
+				border-radius: 8px;
 
-     .doctorIntro-name {
-      font-size: 16px;
-      color: #45c3d2;
-      margin-bottom: 4px;
-      cursor: pointer;
-     }
-    }
+				.doctorIntro-content {
+					align-items: unset;
+					padding: 12px;
+					flex: 55%;
 
-    .doctorInfo-detailes {
-     display: unset;
-     flex: 45%;
+					.doctorIntro-name {
+						font-size: 16px;
+						color: #45c3d2;
+						margin-bottom: 4px;
+						cursor: pointer;
+					}
+				}
 
-     .doctorInfo-left {
-      border-left: 1px solid #80808047;
-      padding: 0 16px;
+				.doctorInfo-detailes {
+					display: unset;
+					flex: 45%;
 
-      .doctorWorkdate-content {
-       border-bottom: 1px solid #80808047;
-      }
-     }
+					.doctorInfo-left {
+						border-left: 1px solid #80808047;
+						padding: 0 16px;
 
-     .doctorInfo-right {
-      border-left: 1px solid #80808047;
+						.doctorWorkdate-content {
+							border-bottom: 1px solid #80808047;
+						}
+					}
 
-      .doctorExtraInfo-content {
-       border-left: unset;
-       margin-top: unset;
-      }
-     }
-    }
-   }
-  }
- }
+					.doctorInfo-right {
+						border-left: 1px solid #80808047;
+
+						.doctorExtraInfo-content {
+							border-left: unset;
+							margin-top: unset;
+						}
+					}
+				}
+			}
+		}
+	}
 }

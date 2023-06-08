@@ -9,7 +9,7 @@ const initialState = {
 	allcodesExtra: null,
 	allSpecialities: null,
 	allSpecialitiesForSystem: null,
-	specialityAndDoctorsById: null,
+	specialityAndDoctorsListById: [],
 	allClinics: null,
 	patientList: null,
 };
@@ -66,7 +66,7 @@ const adminReducer = (state = initialState, action) => {
 	} else if (type === actionTypes.SUCCEEDED_GET_SPECIALITY_AND_DOCTOR_BYID) {
 		return {
 			...state,
-			specialityAndDoctorsById: payload.records,
+			specialityAndDoctorsListById: payload.records,
 		};
 	} else if (type === actionTypes.SUCCEEDED_GET_ALL_CLINICS) {
 		return {

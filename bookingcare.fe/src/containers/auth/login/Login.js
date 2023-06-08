@@ -43,13 +43,13 @@ class Login extends Component {
 		if (userInfo) {
 			const { navigate } = router;
 			const { adminRole, doctorRole } = constVals.defaultKeys;
-			const { userManagerRoute, doctorScheduleRoute, homeRoute } = routeSupplies.defaultRoutesForNav;
+			const { userManagerRoute, doctorScheduleRoute } = routeSupplies.defaultRoutesForNav;
 
 			if (userInfo.roleId === adminRole) {
 				if (accessToken) navigate(userManagerRoute, { replace: true });
 			} else if (userInfo.roleId === doctorRole) {
 				navigate(doctorScheduleRoute, { replace: true });
-			} else navigate(homeRoute, { replace: true });
+			}
 		}
 	};
 

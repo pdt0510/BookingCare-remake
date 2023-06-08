@@ -3,6 +3,7 @@ import db from '../models/index';
 import * as constVals from '../utilities/index';
 import _ from 'lodash';
 import * as emailServs from './emailService';
+import { Op } from 'sequelize';
 
 export const sendBillToPatientEmailServ = (info) => {
 	return new Promise(async (resolve, reject) => {
@@ -270,7 +271,7 @@ export const getDoctorWorkdateByIdServ = (doctorId) => {
 export const getDoctorScheduleByIdServ = (doctorId) => {
 	return new Promise(async (resolve, reject) => {
 		try {
-			let result = { ...apiStates.notFound };
+			let result = apiStates.notFound;
 
 			let records = await db.schedules.findAll({
 				where: { doctorId },
@@ -375,7 +376,7 @@ export const getDoctorIntroByIdServ = (id) => {
 			let result = apiStates.notFound;
 
 			const record = await db.users.findOne({
-				where: { id },
+				where: { id, deleted: 0 },
 				attributes: ['firstname', 'lastname', 'avatar'],
 
 				include: [
